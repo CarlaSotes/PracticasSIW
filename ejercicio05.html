@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 04 Plantillas</title>
+</head>
+
+    <body>
+        <!--
+            EJERCICIO 5
+            Crearemos un documento html que recoja la información de una
+            persona en un formulario: Nombre, apelllido1, apellido2, dirección,
+            población, provincia, teléfono.
+            Posteriormente mostraremos los datos que se introducen en ese formulario
+            en una página html (se utilizará una plantilla)
+        -->
+        <form action="ejercicio05.php">
+            <!-- Nombre -->
+            <div>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="user_name">
+            </div>
+            <!-- Primer Apellido -->
+            <div>
+                <label for="surname1">Primer Apellido:</label>
+                <input type="text" id="surname1" name="user_surname1">
+            </div>
+            <!-- Segundo Apellido -->
+            <div>
+                <label for="surname2">Segundo Apellido:</label>
+                <input type="text" id="surname2" name="user_surname2">
+            </div>
+            <!-- Dirección -->
+            <div>
+                <label for="adress">Dirección:</label>
+                <input type="text" id="adress" name="user_add">
+            </div>
+            <!-- Población -->
+            <div>
+                <label for="poblation">Población:</label>
+                <input type="text" id="poblation" name="user_pob">
+            </div>
+            <!-- Provincia -->
+            <div>
+                <label for="province">Provincia:</label>
+                <input type="text" id="province" name="user_prov">
+            </div>
+            <!-- Teléfono 1 -->
+            <div>
+                <label for="tel1">Teléfono 1:</label>
+                <input type="text" id="tel1" name="user_tel1">
+            </div>
+            <!-- Enviar formuladio -->
+            <button type="submit" onclick="alert('Enviar!')">Enviar!</button>
+        </form>
+    </body>
+</html>
