@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 06 Plantillas</title>
+    </head>
+
+    <body>
+        <!--
+            EJERCICIO 6
+            Vamos a realizar una ampliación del ejercicio número 3.
+            Pero en esta ocasión a parte de mostrar la tabla con los
+            datos de las personas queremos añadir encima de la tabla
+            un desplegable con las poblaciones.
+            También debajo de la tabla de personas, queremos añadir
+            otra tabla con la información de vehículos: Marca, Modelo,
+            Color, Número de puertas
+            La información de los vehículos se recogerá de un fichero json.
+            Para la generación de este fichero json crearemos un php que lo
+            genere de forma similar al ejercicio 3 con las personas. Deberemos
+            de meter información de 10 vehículos.
+        -->
+        <select>
+            <option value="0">Seleccione un valor</option>
+            ##fila##
+            <option value="##pob##">##pob## </option>
+            ##fila##
+        </select>
+
+        <table border="1px">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido1</th>
+                <th>Apellido2</th>
+                <th>Telefono</th>
+                <th>Poblacion</th>
+                <th>Provincia</th>
+            </tr>
+            ##fila##
+            <tr>
+                <td>##nombre##</td>
+                <td>##apellido1##</td>
+                <td>##apellido2##</td>
+                <td>##telefono##</td>
+                <td>##poblacion##</td>
+                <td>##provincia##</td>
+            </tr>
+            ##fila##
+        </table>
+
+        <table border="1px">
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Color</th>
+                <th>Número de puertas</th>
+            </tr>
+            ##fila##
+            <tr>
+                <td>##marca##</td>
+                <td>##modelo##</td>
+                <td>##color##</td>
+                <td>##puertas##</td>
+            </tr>
+            ##fila##
+        </table>
+
+    </body>
+</html>
