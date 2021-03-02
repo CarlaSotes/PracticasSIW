@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 04 Plantillas</title>
+</head>
+
+    <body>
+    <!--
+        EJERCICIO 4
+        Queremos realizar un ejercicio similar al ejercicio anterior,
+        pero en esta ocasión lo que queremos hacer es mostrar en pantalla
+        una lista desplegable (select) con los nombre de 15 poblaciones
+        de navarra. (En este caso los nombres de las poblaciones los
+        meteremos directamente en el php, no se meterán desde un fichero json)
+        Se tendrá que crear un fichero html que hará las veces de plantilla del select.
+    -->
+    <label>
+        Nombres de 15 poblaciones
+        <select>
+            <option value="0">Seleccione un valor</option>
+            ##fila##
+            <option value="##pob##">##pob## </option>
+            ##fila##
+        </select>
+    </label>
+    </body>
+</html>
